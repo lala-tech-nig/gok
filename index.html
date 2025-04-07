@@ -25,16 +25,21 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
-
+<!-- 2348087479283 -->
 <body>
 <!-- whatsapp button start -->
 
-<a href="https://wa.me/2348087479283" 
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/234808747928?text=Hello%20GOK%20NIGERIA%20LIMITED,%20I%27m%20interested%20in%20your%20product%20and%20services.%20Tell%20me%20more." 
    class="whatsapp-button" 
    target="_blank" 
-   title="Chat with us on WhatsApp">
-   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+   title="Chat with GOK NIGERIA LIMITED"
+   onclick="playClickSound()">
+   <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp" />
 </a>
+
+<!-- Sound -->
+<audio id="clickSound" src="https://www.soundjay.com/buttons/sounds/button-16.mp3" preload="auto"></audio>
 
 <!-- Styles -->
 <style>
@@ -60,6 +65,15 @@
     display: block;
   }
 </style>
+
+<!-- JavaScript -->
+<script>
+  function playClickSound() {
+    const sound = document.getElementById("clickSound");
+    sound.play();
+  }
+</script>
+
 
 <!-- whatsapp button end -->
 
